@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var palanquinRouter = require('./routes/palanquin');
 var palanquinRouter = require('./routes/palanquin');
 var addmodsRouter = require('./routes/addmods');
+var selectorRouter = require('./routes/selector');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/palanquin', palanquinRouter);
 app.use('/addmods', addmodsRouter);
+app.use('/selector', selectorRouter);
 
 
 // catch 404 and forward to error handler
